@@ -41,7 +41,7 @@ public class ChatActivity extends AppCompatActivity {
 
     private DatabaseReference messagesRef;
 
-    private final String appId = "a3deaaf5013b4086a038a0be15acc91b";
+    private final String appId = "Agora-App-ID ";
 
 
     @Override
