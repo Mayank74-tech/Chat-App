@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/image_profile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_avatar"
+        android:background="@drawable/circle_bg"
+        android:clipToOutline="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        app:layout_constraintStart_toEndOf="@id/image_profile"
+        app:layout_constraintTop_toTopOf="@id/image_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:id="@+id/text_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Status message"
+        android:textSize="14sp"
+        android:textColor="#ffff"
+        app:layout_constraintStart_toStartOf="@id/text_username"
+        app:layout_constraintTop_toBottomOf="@id/text_username"
+        app:layout_constraintEnd_toEndOf="@id/text_username" />
+    <TextView
+        android:id="@+id/text_unread_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_received"
+        android:text="3"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:padding="4dp"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

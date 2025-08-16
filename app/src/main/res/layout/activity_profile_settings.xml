@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B253F"
+    tools:context=".ProfileSettingsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Profile Photo -->
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/default_avatar"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_bg"
+                android:elevation="6dp"
+                android:padding="4dp" />
+
+            <Button
+                android:id="@+id/btnChangePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#1E88E5"
+                android:text="Change Photo"
+                android:textColor="@android:color/white"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="6dp"
+                android:background="@drawable/rounded_button" />
+
+            <!-- Username -->
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:hint="Enter new username"
+                android:paddingHorizontal="16dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="#9AB3C6"
+                android:background="@drawable/edittext_bg" />
+
+            <Button
+                android:id="@+id/btnSaveUsername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#4CAF50"
+                android:text="Save Username"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_button" />
+
+            <!-- Sign Out -->
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                >
+
+            </TextView>
+
+            <Button
+                android:id="@+id/btnSignOut"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#E53935"
+                android:text="Sign Out"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_button" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
